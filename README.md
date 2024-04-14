@@ -26,8 +26,16 @@ chmod +x *.sh
 
 Ejecute el script install-and-test-all.sh para iniciar la instalación y las pruebas de OCS Inventory y GLPI.
 ```bash
-./GLPI/install-and-test-all.sh
+# Instalar OCS Inventory
+./ocs-install.sh
+# Compruebe si la instalacion  de OCS Inventory es existosa corriendo esta prueba
+./test-ocs-install.sh
+# Instalar GLPI
+./glpi-install.sh
+# Compruebe si la instalacion  de GLPI es existosa corriendo esta prueba
+./test-glpi-install.sh
 ```
+
 
 ## Prerequisitos
 Antes de ejecutar los scripts, asegúrese de que su servidor cumpla con los siguientes requisitos:
